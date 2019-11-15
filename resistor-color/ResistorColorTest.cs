@@ -25,6 +25,6 @@ public class ResistorColorTest
     [Fact]
     public void Colors()
     {
-        Assert.Equal(new[] { "black", "brown", "red", "orange", "yellow", "green", "blue", "violet", "grey", "white" }, ResistorColor.Colors());
+        Assert.Equal(new[] { "black", "brown", "red", "orange", "yellow", "green", "blue", "violet", "grey", "white" }, ResistorColor.GetColors());
     }
 }

@@ -14,7 +14,9 @@ before_install:
   - export PATH=$HOME/.dotnet/tools:$PATH
 script:
   - pwsh ./test.ps1
-cache:
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
+  cache:
   directories:
     - $HOME/.nuget/packages
     - $HOME/.dotnet/tools

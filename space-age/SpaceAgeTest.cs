@@ -43,7 +43,7 @@ public class SpaceAgeTest
     public void Age_on_saturn()
     {
         var sut = new SpaceAge(2000000000);
-        Assert.Equal(2.15, sut.OnSaturn(), precision: 2);
+        Assert.Equal(2.15, sut.OnSaturn, precision: 2);
     }
 
     [Fact]

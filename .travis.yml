@@ -16,7 +16,7 @@ script:
   - pwsh ./test.ps1
 after_success:
   - bash <(curl -s https://codecov.io/bash)
-  cache:
+cache:
   directories:
     - $HOME/.nuget/packages
     - $HOME/.dotnet/tools

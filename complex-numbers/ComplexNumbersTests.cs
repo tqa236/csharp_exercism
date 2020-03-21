@@ -3,7 +3,7 @@
 using System;
 using Xunit;
 
-public class ComplexNumbersTest
+public class ComplexNumbersTests
 {
     [Fact]
     public void Real_part_of_a_purely_real_number()

@@ -3,7 +3,7 @@
 using System;
 using Xunit;
 
-public class SumOfMultiplesTest
+public class SumOfMultiplesTests
 {
     [Fact]
     public void No_multiples_within_limit()

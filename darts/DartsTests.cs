@@ -2,7 +2,7 @@
 
 using Xunit;
 
-public class DartsTest
+public class DartsTests
 {
     [Fact]
     public void Missed_target()

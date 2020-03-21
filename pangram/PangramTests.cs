@@ -2,7 +2,7 @@
 
 using Xunit;
 
-public class PangramTest
+public class PangramTests
 {
     [Fact]
     public void Empty_sentence()

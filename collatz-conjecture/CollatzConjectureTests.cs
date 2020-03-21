@@ -3,7 +3,7 @@
 using System;
 using Xunit;
 
-public class CollatzConjectureTest
+public class CollatzConjectureTests
 {
     [Fact]
     public void Zero_steps_for_one()
@@ -32,12 +32,12 @@ public class CollatzConjectureTest
     [Fact]
     public void Zero_is_an_error()
     {
-        Assert.Throws<ArgumentException>(() => CollatzConjecture.Steps(0));
+        Assert.Throws<ArgumentOutOfRangeException>(() => CollatzConjecture.Steps(0));
     }
 
     [Fact]
     public void Negative_value_is_an_error()
     {
-        Assert.Throws<ArgumentException>(() => CollatzConjecture.Steps(-15));
+        Assert.Throws<ArgumentOutOfRangeException>(() => CollatzConjecture.Steps(-15));
     }
 }

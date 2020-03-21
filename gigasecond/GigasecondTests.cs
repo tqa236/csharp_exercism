@@ -3,7 +3,7 @@
 using System;
 using Xunit;
 
-public class GigasecondTest
+public class GigasecondTests
 {
     [Fact]
     public void Date_only_specification_of_time()

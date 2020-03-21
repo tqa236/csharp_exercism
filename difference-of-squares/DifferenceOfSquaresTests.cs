@@ -2,7 +2,7 @@
 
 using Xunit;
 
-public class DifferenceOfSquaresTest
+public class DifferenceOfSquaresTests
 {
     [Fact]
     public void Square_of_sum_1()

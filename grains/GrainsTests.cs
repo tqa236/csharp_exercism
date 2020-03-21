@@ -3,7 +3,7 @@
 using System;
 using Xunit;
 
-public class GrainsTest
+public class GrainsTests
 {
     [Fact]
     public void Number_1()

@@ -2,7 +2,7 @@
 
 using Xunit;
 
-public class LeapTest
+public class LeapTests
 {
     [Fact]
     public void Year_not_divisible_by_4_in_common_year()

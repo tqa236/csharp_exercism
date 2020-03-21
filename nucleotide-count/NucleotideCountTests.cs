@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using Xunit;
 
-public class NucleotideCountTest
+public class NucleotideCountTests
 {
     [Fact]
     public void Empty_strand()

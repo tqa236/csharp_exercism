@@ -3,7 +3,7 @@
 using System;
 using Xunit;
 
-public class HammingTest
+public class HammingTests
 {
     [Fact]
     public void Empty_strands()

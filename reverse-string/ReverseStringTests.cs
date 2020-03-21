@@ -2,7 +2,7 @@
 
 using Xunit;
 
-public class ReverseStringTest
+public class ReverseStringTests
 {
     [Fact]
     public void An_empty_string()

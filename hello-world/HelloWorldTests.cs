@@ -2,7 +2,7 @@
 
 using Xunit;
 
-public class HelloWorldTest
+public class HelloWorldTests
 {
     [Fact]
     public void Say_hi_()

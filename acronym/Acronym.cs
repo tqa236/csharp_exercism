@@ -1,9 +1,14 @@
 ﻿using System;
+using System.Linq;
+using System.Globalization;
 
 public static class Acronym
 {
     public static string Abbreviate(string phrase)
     {
-        throw new NotImplementedException("Please implement this function");
+        TextInfo myTI = new CultureInfo("en-US", false).TextInfo;
+        phrase = phrase.Replace("-", " ");
+        phrase = myTI.ToTitleCase(phrase.ToLower());
+        return string.Join("", phrase.Where(w => Char.IsLetter(w) && w == Char.ToUpper(w)));
     }
 }

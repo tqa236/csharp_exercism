@@ -2,7 +2,7 @@
 
 using Xunit;
 
-public class RationalNumbersTest
+public class RationalNumbersTests
 {
     [Fact]
     public void Add_two_positive_rational_numbers()
@@ -187,7 +187,7 @@ public class RationalNumbersTest
     [Fact]
     public void Raise_a_real_number_to_a_negative_rational_number()
     {
-        Assert.Equal(0.3333333, 9.Expreal(new RationalNumber(-1, 2)), precision: 7);
+        Assert.Equal(0.33333334, 9.Expreal(new RationalNumber(-1, 2)), precision: 7);
     }
 
     [Fact]

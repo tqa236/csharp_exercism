@@ -3,7 +3,7 @@
 using System;
 using Xunit;
 
-public class SeriesTest
+public class SeriesTests
 {
     [Fact]
     public void Slices_of_one_from_one()

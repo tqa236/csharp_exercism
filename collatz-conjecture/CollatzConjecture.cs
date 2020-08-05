@@ -6,14 +6,17 @@ public static class CollatzConjecture
 
     public static int Steps(int number)
     {
-        if (number < 1){
+        if (number < 1)
+        {
             throw new System.ArgumentException(Message);
         }
-        if (number == 1){
+        if (number == 1)
+        {
             return 0;
         }
-        if (number % 2 == 0){
-            return Steps(number/2) + 1;
+        if (number % 2 == 0)
+        {
+            return Steps(number / 2) + 1;
         }
         return Steps(3 * number + 1) + 1;
     }

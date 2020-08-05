@@ -11,8 +11,8 @@ public class SimpleCipher
     {
         throw new NotImplementedException("You need to implement this function.");
     }
-    
-    public string Key 
+
+    public string Key
     {
         get
         {

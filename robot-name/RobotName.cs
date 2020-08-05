@@ -2,7 +2,6 @@ using System;
 
 public class Robot
 {
-    private string name;
     public string Name
     {
         get

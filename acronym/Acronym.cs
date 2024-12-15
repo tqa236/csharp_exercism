@@ -1,14 +1,12 @@
 ﻿using System;
-using System.Globalization;
-using System.Linq;
+using System.Text.RegularExpressions;
 
-public static class Acronym
+public class Acronym
 {
     public static string Abbreviate(string phrase)
     {
-        TextInfo myTI = new CultureInfo("en-US", false).TextInfo;
-        phrase = phrase.Replace("-", " ");
-        phrase = myTI.ToTitleCase(phrase.ToLower());
-        return string.Join("", phrase.Where(w => Char.IsLetter(w) && w == Char.ToUpper(w)));
+        var cleanedPhrase = Regex.Replace(phrase, @"[^a-zA-Z\s-]", "");
+        var words = cleanedPhrase.Split(new[] { ' ', '-' }, StringSplitOptions.RemoveEmptyEntries);
+        return string.Join("", Array.ConvertAll(words, word => word[0].ToString().ToUpper()));
     }
 }

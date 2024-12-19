@@ -1,8 +1,6 @@
-// This file was auto-generated based on version 1.7.0 of the canonical data.
-
 using Xunit;
 
-public class IsogramTest
+public class IsogramTests
 {
     [Fact]
     public void Empty_string()
@@ -80,5 +78,11 @@ public class IsogramTest
     public void Same_first_and_last_characters()
     {
         Assert.False(Isogram.IsIsogram("angola"));
+    }
+
+    [Fact]
+    public void Word_with_duplicated_character_and_with_two_hyphens()
+    {
+        Assert.False(Isogram.IsIsogram("up-to-date"));
     }
 }

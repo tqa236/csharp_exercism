@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Xunit;
 
-public class AccumulateTest
+public class AccumulateTests
 {
     [Fact]
     public void Empty_accumulation_produces_empty_accumulation()

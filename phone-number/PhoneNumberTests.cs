@@ -1,9 +1,7 @@
-// This file was auto-generated based on version 1.7.0 of the canonical data.
-
 using System;
 using Xunit;
 
-public class PhoneNumberTest
+public class PhoneNumberTests
 {
     [Fact]
     public void Cleans_the_number()
@@ -64,14 +62,14 @@ public class PhoneNumberTest
     [Fact]
     public void Invalid_with_letters()
     {
-        var phrase = "123-abc-7890";
+        var phrase = "523-abc-7890";
         Assert.Throws<ArgumentException>(() => PhoneNumber.Clean(phrase));
     }
 
     [Fact]
     public void Invalid_with_punctuations()
     {
-        var phrase = "123-@:!-7890";
+        var phrase = "523-@:!-7890";
         Assert.Throws<ArgumentException>(() => PhoneNumber.Clean(phrase));
     }
 

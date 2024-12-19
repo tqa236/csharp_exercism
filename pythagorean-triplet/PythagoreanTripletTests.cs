@@ -1,9 +1,7 @@
-// This file was auto-generated based on version 1.0.0 of the canonical data.
-
 using System;
 using Xunit;
 
-public class PythagoreanTripletTest
+public class PythagoreanTripletTests
 {
     [Fact]
     public void Triplets_whose_sum_is_12()

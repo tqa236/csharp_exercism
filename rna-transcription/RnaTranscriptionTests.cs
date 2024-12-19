@@ -1,8 +1,6 @@
-// This file was auto-generated based on version 1.3.0 of the canonical data.
-
 using Xunit;
 
-public class RnaTranscriptionTest
+public class RnaTranscriptionTests
 {
     [Fact]
     public void Empty_rna_sequence()

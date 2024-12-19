@@ -1,59 +1,56 @@
 # Scrabble Score
 
-Given a word, compute the scrabble score for that word.
+Welcome to Scrabble Score on Exercism's C# Track.
+If you need help running the tests or submitting your code, check out `HELP.md`.
 
-## Letter Values
+## Introduction
 
-You'll need these:
+[Scrabble][wikipedia] is a word game where players place letter tiles on a board to form words.
+Each letter has a value.
+A word's score is the sum of its letters' values.
 
-```text
-Letter                           Value
-A, E, I, O, U, L, N, R, S, T       1
-D, G                               2
-B, C, M, P                         3
-F, H, V, W, Y                      4
-K                                  5
-J, X                               8
-Q, Z                               10
-```
+[wikipedia]: https://en.wikipedia.org/wiki/Scrabble
 
-## Examples
+## Instructions
 
-"cabbage" should be scored as worth 14 points:
+Your task is to compute a word's Scrabble score by summing the values of its letters.
+
+The letters are valued as follows:
+
+| Letter                       | Value |
+| ---------------------------- | ----- |
+| A, E, I, O, U, L, N, R, S, T | 1     |
+| D, G                         | 2     |
+| B, C, M, P                   | 3     |
+| F, H, V, W, Y                | 4     |
+| K                            | 5     |
+| J, X                         | 8     |
+| Q, Z                         | 10    |
+
+For example, the word "cabbage" is worth 14 points:
 
 - 3 points for C
-- 1 point for A, twice
-- 3 points for B, twice
+- 1 point for A
+- 3 points for B
+- 3 points for B
+- 1 point for A
 - 2 points for G
 - 1 point for E
 
-And to total:
-
-- `3 + 2*1 + 2*3 + 2 + 1`
-- = `3 + 2 + 6 + 3`
-- = `5 + 9`
-- = 14
-
-## Extensions
-
-- You can play a double or a triple letter.
-- You can play a double or a triple word.
-
-## Running the tests
-
-To run the tests, run the command `dotnet test` from within the exercise directory.
-
-Initially, only the first test will be enabled. This is to encourage you to solve the exercise one step at a time.
-Once you get the first test passing, remove the `Skip` property from the next test and work on getting that test passing.
-Once none of the tests are skipped and they are all passing, you can submit your solution 
-using `exercism submit ScrabbleScore.cs`
-
-## Further information
-
-For more detailed information about the C# track, including how to get help if
-you're having trouble, please visit the exercism.io [C# language page](http://exercism.io/languages/csharp/resources).
-
 ## Source
 
-Inspired by the Extreme Startup game [https://github.com/rchatley/extreme_startup](https://github.com/rchatley/extreme_startup)
+### Created by
 
+- @bressain
+
+### Contributed to by
+
+- @ErikSchierboom
+- @j2jensen
+- @jwood803
+- @robkeim
+- @wolf99
+
+### Based on
+
+Inspired by the Extreme Startup game - https://github.com/rchatley/extreme_startup

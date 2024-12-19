@@ -1,38 +1,61 @@
 # RNA Transcription
 
-Given a DNA strand, return its RNA complement (per RNA transcription).
+Welcome to RNA Transcription on Exercism's C# Track.
+If you need help running the tests or submitting your code, check out `HELP.md`.
+
+## Introduction
+
+You work for a bioengineering company that specializes in developing therapeutic solutions.
+
+Your team has just been given a new project to develop a targeted therapy for a rare type of cancer.
+
+~~~~exercism/note
+It's all very complicated, but the basic idea is that sometimes people's bodies produce too much of a given protein.
+That can cause all sorts of havoc.
+
+But if you can create a very specific molecule (called a micro-RNA), it can prevent the protein from being produced.
+
+This technique is called [RNA Interference][rnai].
+
+[rnai]: https://admin.acceleratingscience.com/ask-a-scientist/what-is-rnai/
+~~~~
+
+## Instructions
+
+Your task is to determine the RNA complement of a given DNA sequence.
 
 Both DNA and RNA strands are a sequence of nucleotides.
 
-The four nucleotides found in DNA are adenine (**A**), cytosine (**C**),
-guanine (**G**) and thymine (**T**).
+The four nucleotides found in DNA are adenine (**A**), cytosine (**C**), guanine (**G**), and thymine (**T**).
 
-The four nucleotides found in RNA are adenine (**A**), cytosine (**C**),
-guanine (**G**) and uracil (**U**).
+The four nucleotides found in RNA are adenine (**A**), cytosine (**C**), guanine (**G**), and uracil (**U**).
 
-Given a DNA strand, its transcribed RNA strand is formed by replacing
-each nucleotide with its complement:
+Given a DNA strand, its transcribed RNA strand is formed by replacing each nucleotide with its complement:
 
-* `G` -> `C`
-* `C` -> `G`
-* `T` -> `A`
-* `A` -> `U`
+- `G` -> `C`
+- `C` -> `G`
+- `T` -> `A`
+- `A` -> `U`
 
-## Running the tests
-
-To run the tests, run the command `dotnet test` from within the exercise directory.
-
-Initially, only the first test will be enabled. This is to encourage you to solve the exercise one step at a time.
-Once you get the first test passing, remove the `Skip` property from the next test and work on getting that test passing.
-Once none of the tests are skipped and they are all passing, you can submit your solution 
-using `exercism submit RnaTranscription.cs`
-
-## Further information
-
-For more detailed information about the C# track, including how to get help if
-you're having trouble, please visit the exercism.io [C# language page](http://exercism.io/languages/csharp/resources).
+~~~~exercism/note
+If you want to look at how the inputs and outputs are structured, take a look at the examples in the test suite.
+~~~~
 
 ## Source
 
-Hyperphysics [http://hyperphysics.phy-astr.gsu.edu/hbase/Organic/transcription.html](http://hyperphysics.phy-astr.gsu.edu/hbase/Organic/transcription.html)
+### Created by
 
+- @bressain
+
+### Contributed to by
+
+- @ErikSchierboom
+- @FizzBuzz791
+- @j2jensen
+- @jwood803
+- @robkeim
+- @wolf99
+
+### Based on
+
+Hyperphysics - https://web.archive.org/web/20220408112140/http://hyperphysics.phy-astr.gsu.edu/hbase/Organic/transcription.html

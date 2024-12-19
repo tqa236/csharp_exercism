@@ -1,13 +1,11 @@
-// This file was auto-generated based on version 2.1.0 of the canonical data.
-
 using Xunit;
 
-public class BeerSongTest
+public class BeerSongTests
 {
     [Fact]
     public void First_generic_verse()
     {
-        var expected =
+        var expected = 
             "99 bottles of beer on the wall, 99 bottles of beer.\n" +
             "Take one down and pass it around, 98 bottles of beer on the wall.";
         Assert.Equal(expected, BeerSong.Recite(99, 1));
@@ -16,7 +14,7 @@ public class BeerSongTest
     [Fact]
     public void Last_generic_verse()
     {
-        var expected =
+        var expected = 
             "3 bottles of beer on the wall, 3 bottles of beer.\n" +
             "Take one down and pass it around, 2 bottles of beer on the wall.";
         Assert.Equal(expected, BeerSong.Recite(3, 1));
@@ -25,7 +23,7 @@ public class BeerSongTest
     [Fact]
     public void Verse_with_2_bottles()
     {
-        var expected =
+        var expected = 
             "2 bottles of beer on the wall, 2 bottles of beer.\n" +
             "Take one down and pass it around, 1 bottle of beer on the wall.";
         Assert.Equal(expected, BeerSong.Recite(2, 1));
@@ -34,7 +32,7 @@ public class BeerSongTest
     [Fact]
     public void Verse_with_1_bottle()
     {
-        var expected =
+        var expected = 
             "1 bottle of beer on the wall, 1 bottle of beer.\n" +
             "Take it down and pass it around, no more bottles of beer on the wall.";
         Assert.Equal(expected, BeerSong.Recite(1, 1));
@@ -43,7 +41,7 @@ public class BeerSongTest
     [Fact]
     public void Verse_with_0_bottles()
     {
-        var expected =
+        var expected = 
             "No more bottles of beer on the wall, no more bottles of beer.\n" +
             "Go to the store and buy some more, 99 bottles of beer on the wall.";
         Assert.Equal(expected, BeerSong.Recite(0, 1));
@@ -52,7 +50,7 @@ public class BeerSongTest
     [Fact]
     public void First_two_verses()
     {
-        var expected =
+        var expected = 
             "99 bottles of beer on the wall, 99 bottles of beer.\n" +
             "Take one down and pass it around, 98 bottles of beer on the wall.\n" +
             "\n" +
@@ -64,7 +62,7 @@ public class BeerSongTest
     [Fact]
     public void Last_three_verses()
     {
-        var expected =
+        var expected = 
             "2 bottles of beer on the wall, 2 bottles of beer.\n" +
             "Take one down and pass it around, 1 bottle of beer on the wall.\n" +
             "\n" +
@@ -79,7 +77,7 @@ public class BeerSongTest
     [Fact]
     public void All_verses()
     {
-        var expected =
+        var expected = 
             "99 bottles of beer on the wall, 99 bottles of beer.\n" +
             "Take one down and pass it around, 98 bottles of beer on the wall.\n" +
             "\n" +

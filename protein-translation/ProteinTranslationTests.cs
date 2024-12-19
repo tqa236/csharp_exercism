@@ -1,9 +1,13 @@
-// This file was auto-generated based on version 1.1.1 of the canonical data.
-
 using Xunit;
 
-public class ProteinTranslationTest
+public class ProteinTranslationTests
 {
+    [Fact]
+    public void Empty_rna_sequence_results_in_no_proteins()
+    {
+        Assert.Empty(ProteinTranslation.Proteins(""));
+    }
+
     [Fact]
     public void Methionine_rna_sequence()
     {
@@ -107,6 +111,18 @@ public class ProteinTranslationTest
     }
 
     [Fact]
+    public void Sequence_of_two_protein_codons_translates_into_proteins()
+    {
+        Assert.Equal(new[] { "Phenylalanine", "Phenylalanine" }, ProteinTranslation.Proteins("UUUUUU"));
+    }
+
+    [Fact]
+    public void Sequence_of_two_different_protein_codons_translates_into_proteins()
+    {
+        Assert.Equal(new[] { "Leucine", "Leucine" }, ProteinTranslation.Proteins("UUAUUG"));
+    }
+
+    [Fact]
     public void Translate_rna_strand_into_correct_protein_list()
     {
         Assert.Equal(new[] { "Methionine", "Phenylalanine", "Tryptophan" }, ProteinTranslation.Proteins("AUGUUUUGG"));
@@ -140,5 +156,11 @@ public class ProteinTranslationTest
     public void Translation_stops_if_stop_codon_in_middle_of_six_codon_sequence()
     {
         Assert.Equal(new[] { "Tryptophan", "Cysteine", "Tyrosine" }, ProteinTranslation.Proteins("UGGUGUUAUUAAUGGUUU"));
+    }
+
+    [Fact]
+    public void Sequence_of_two_non_stop_codons_does_not_translate_stop_codon()
+    {
+        Assert.Equal(new[] { "Methionine", "Methionine" }, ProteinTranslation.Proteins("AUGAUG"));
     }
 }

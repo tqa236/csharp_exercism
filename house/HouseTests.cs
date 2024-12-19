@@ -1,8 +1,6 @@
-// This file was auto-generated based on version 2.2.0 of the canonical data.
-
 using Xunit;
 
-public class HouseTest
+public class HouseTests
 {
     [Fact]
     public void Verse_one_the_house_that_jack_built()
@@ -91,7 +89,7 @@ public class HouseTest
     [Fact]
     public void Multiple_verses()
     {
-        var expected =
+        var expected = 
             "This is the cat that killed the rat that ate the malt that lay in the house that Jack built.\n" +
             "This is the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n" +
             "This is the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n" +
@@ -103,7 +101,7 @@ public class HouseTest
     [Fact]
     public void Full_rhyme()
     {
-        var expected =
+        var expected = 
             "This is the house that Jack built.\n" +
             "This is the malt that lay in the house that Jack built.\n" +
             "This is the rat that ate the malt that lay in the house that Jack built.\n" +

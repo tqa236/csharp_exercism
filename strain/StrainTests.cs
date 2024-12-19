@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Xunit;
 
-public class StrainTest
+public class StrainTests
 {
     [Fact]
     public void Empty_keep()
@@ -14,6 +14,12 @@ public class StrainTest
     public void Keep_everything()
     {
         Assert.Equal(new HashSet<int> { 1, 2, 3 }, new HashSet<int> { 1, 2, 3 }.Keep(x => x < 10));
+    }
+
+    [Fact]
+    public void Keep_nothing()
+    {
+        Assert.Equal(new HashSet<int>(), new HashSet<int> { 1, 2, 3 }.Keep(x => x > 10));
     }
 
     [Fact]
@@ -56,6 +62,12 @@ public class StrainTest
     public void Empty_discard()
     {
         Assert.Equal(new LinkedList<int>(), new LinkedList<int>().Discard(x => x < 10));
+    }
+
+    [Fact]
+    public void Discard_everything()
+    {
+        Assert.Equal(new HashSet<int>(), new HashSet<int> { 1, 2, 3 }.Discard(x => x < 10));
     }
 
     [Fact]

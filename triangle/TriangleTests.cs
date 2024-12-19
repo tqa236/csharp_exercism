@@ -1,8 +1,6 @@
-// This file was auto-generated based on version 1.2.1 of the canonical data.
-
 using Xunit;
 
-public class TriangleTest
+public class TriangleTests
 {
     [Fact]
     public void Equilateral_triangle_all_sides_are_equal()
@@ -101,9 +99,21 @@ public class TriangleTest
     }
 
     [Fact]
-    public void Scalene_triangle_two_sides_are_equal()
+    public void Scalene_triangle_first_and_second_sides_are_equal()
     {
         Assert.False(Triangle.IsScalene(4, 4, 3));
+    }
+
+    [Fact]
+    public void Scalene_triangle_first_and_third_sides_are_equal()
+    {
+        Assert.False(Triangle.IsScalene(3, 4, 3));
+    }
+
+    [Fact]
+    public void Scalene_triangle_second_and_third_sides_are_equal()
+    {
+        Assert.False(Triangle.IsScalene(4, 3, 3));
     }
 
     [Fact]

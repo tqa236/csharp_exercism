@@ -1,8 +1,6 @@
-// This file was auto-generated based on version 1.5.0 of the canonical data.
-
 using Xunit;
 
-public class PascalsTriangleTest
+public class PascalsTriangleTests
 {
     [Fact]
     public void Zero_rows()

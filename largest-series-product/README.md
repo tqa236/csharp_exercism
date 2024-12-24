@@ -1,33 +1,58 @@
 # Largest Series Product
 
-Given a string of digits, calculate the largest product for a contiguous
-substring of digits of length n.
+Welcome to Largest Series Product on Exercism's C# Track.
+If you need help running the tests or submitting your code, check out `HELP.md`.
 
-For example, for the input `'1027839564'`, the largest product for a
-series of 3 digits is 270 (9 * 5 * 6), and the largest product for a
-series of 5 digits is 7560 (7 * 8 * 3 * 9 * 5).
+## Introduction
 
-Note that these series are only required to occupy *adjacent positions*
-in the input; the digits need not be *numerically consecutive*.
+You work for a government agency that has intercepted a series of encrypted communication signals from a group of bank robbers.
+The signals contain a long sequence of digits.
+Your team needs to use various digital signal processing techniques to analyze the signals and identify any patterns that may indicate the planning of a heist.
 
-For the input `'73167176531330624919225119674426574742355349194934'`,
-the largest product for a series of 6 digits is 23520.
+## Instructions
 
-## Running the tests
+Your task is to look for patterns in the long sequence of digits in the encrypted signal.
 
-To run the tests, run the command `dotnet test` from within the exercise directory.
+The technique you're going to use here is called the largest series product.
 
-Initially, only the first test will be enabled. This is to encourage you to solve the exercise one step at a time.
-Once you get the first test passing, remove the `Skip` property from the next test and work on getting that test passing.
-Once none of the tests are skipped and they are all passing, you can submit your solution 
-using `exercism submit LargestSeriesProduct.cs`
+Let's define a few terms, first.
 
-## Further information
+- **input**: the sequence of digits that you need to analyze
+- **series**: a sequence of adjacent digits (those that are next to each other) that is contained within the input
+- **span**: how many digits long each series is
+- **product**: what you get when you multiply numbers together
 
-For more detailed information about the C# track, including how to get help if
-you're having trouble, please visit the exercism.io [C# language page](http://exercism.io/languages/csharp/resources).
+Let's work through an example, with the input `"63915"`.
+
+- To form a series, take adjacent digits in the original input.
+- If you are working with a span of `3`, there will be three possible series:
+  - `"639"`
+  - `"391"`
+  - `"915"`
+- Then we need to calculate the product of each series:
+  - The product of the series `"639"` is 162 (`6 × 3 × 9 = 162`)
+  - The product of the series `"391"` is 27 (`3 × 9 × 1 = 27`)
+  - The product of the series `"915"` is 45 (`9 × 1 × 5 = 45`)
+- 162 is bigger than both 27 and 45, so the largest series product of `"63915"` is from the series `"639"`.
+  So the answer is **162**.
 
 ## Source
 
-A variation on Problem 8 at Project Euler [http://projecteuler.net/problem=8](http://projecteuler.net/problem=8)
+### Created by
 
+- @bressain
+
+### Contributed to by
+
+- @ErikSchierboom
+- @felix91gr
+- @j2jensen
+- @jwood803
+- @petertseng
+- @robkeim
+- @wolf99
+- @Zureka
+
+### Based on
+
+A variation on Problem 8 at Project Euler - https://projecteuler.net/problem=8

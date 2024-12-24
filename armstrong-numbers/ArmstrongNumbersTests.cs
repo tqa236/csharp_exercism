@@ -1,8 +1,6 @@
-// This file was auto-generated based on version 1.1.0 of the canonical data.
-
 using Xunit;
 
-public class ArmstrongNumbersTest
+public class ArmstrongNumbersTests
 {
     [Fact]
     public void Zero_is_an_armstrong_number()
@@ -17,7 +15,7 @@ public class ArmstrongNumbersTest
     }
 
     [Fact]
-    public void There_are_no_2_digit_armstrong_numbers()
+    public void There_are_no_two_digit_armstrong_numbers()
     {
         Assert.False(ArmstrongNumbers.IsArmstrongNumber(10));
     }

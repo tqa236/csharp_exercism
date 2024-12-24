@@ -1,9 +1,7 @@
-// This file was auto-generated based on version 1.2.0 of the canonical data.
-
 using System;
 using Xunit;
 
-public class LargestSeriesProductTest
+public class LargestSeriesProductTests
 {
     [Fact]
     public void Finds_the_largest_product_if_span_equals_length()
@@ -63,18 +61,6 @@ public class LargestSeriesProductTest
     public void Rejects_span_longer_than_string_length()
     {
         Assert.Throws<ArgumentException>(() => LargestSeriesProduct.GetLargestProduct("123", 4));
-    }
-
-    [Fact]
-    public void Reports_1_for_empty_string_and_empty_product_0_span_()
-    {
-        Assert.Equal(1, LargestSeriesProduct.GetLargestProduct("", 0));
-    }
-
-    [Fact]
-    public void Reports_1_for_nonempty_string_and_empty_product_0_span_()
-    {
-        Assert.Equal(1, LargestSeriesProduct.GetLargestProduct("123", 0));
     }
 
     [Fact]

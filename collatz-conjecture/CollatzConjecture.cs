@@ -8,16 +8,20 @@ public static class CollatzConjecture
     {
         if (number < 1)
         {
-            throw new System.ArgumentException(Message);
+            throw new ArgumentOutOfRangeException(nameof(number), Message);
         }
-        if (number == 1)
+        
+        int steps = 0;
+        long currentNumber = number; // Use long to prevent overflow
+        
+        while (currentNumber != 1)
         {
-            return 0;
+            currentNumber = (currentNumber % 2 == 0) 
+                ? currentNumber / 2 
+                : 3 * currentNumber + 1;
+            steps++;
         }
-        if (number % 2 == 0)
-        {
-            return Steps(number / 2) + 1;
-        }
-        return Steps(3 * number + 1) + 1;
+        
+        return steps;
     }
 }

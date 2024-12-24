@@ -1,8 +1,8 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
 using Xunit;
 
-public class ParallelLetterFrequencyTest
+public class ParallelLetterFrequencyTests
 {
     // Poem by Friedrich Schiller. The corresponding music is the European Anthem.
     private const string OdeAnDieFreude =

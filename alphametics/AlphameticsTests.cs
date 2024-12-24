@@ -1,10 +1,8 @@
-// This file was auto-generated based on version 1.3.0 of the canonical data.
-
 using System;
 using System.Collections.Generic;
 using Xunit;
 
-public class AlphameticsTest
+public class AlphameticsTests
 {
     [Fact]
     public void Puzzle_with_three_letters()

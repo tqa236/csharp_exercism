@@ -1,9 +1,7 @@
-// This file was auto-generated based on version 2.0.0 of the canonical data.
-
 using System;
 using Xunit;
 
-public class SimpleCipherTest
+public class SimpleCipherTests
 {
     [Fact]
     public void Random_key_cipher_can_encode()

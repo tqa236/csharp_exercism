@@ -1,9 +1,7 @@
-// This file was auto-generated based on version 2.0.1 of the canonical data.
-
 using System.Collections.Generic;
 using Xunit;
 
-public class EtlTest
+public class EtlTests
 {
     [Fact]
     public void Single_letter()

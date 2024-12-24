@@ -1,9 +1,7 @@
-// This file was auto-generated based on version 2.3.0 of the canonical data.
-
 using System;
 using Xunit;
 
-public class AllYourBaseTest
+public class AllYourBaseTests
 {
     [Fact]
     public void Single_bit_one_to_decimal()

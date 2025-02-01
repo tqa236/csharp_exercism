@@ -34,3 +34,4 @@ msbuild.wrn
 **/.exercism/*
 
 csharp.sln
+.editorconfig

@@ -21,5 +21,14 @@ jobs:
         with:
           dotnet-version: "9.0.101"
 
-      - name: Run tests
-        run: dotnet test
+      - name: Run tests in each folder
+        run: |
+          for dir in */; do
+            if [ -f "$dir/$dir.csproj" ]; then
+              echo "Running tests in $dir"
+              cd "$dir"
+              dotnet test
+              cd ..
+            fi
+          done
+

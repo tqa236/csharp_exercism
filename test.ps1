@@ -1,1 +1,0 @@
-ForEach ($folder in (Get-ChildItem -Directory)) { dotnet test $folder.FullName }

@@ -1,7 +1,3 @@
-// This file was auto-generated based on version 2.2.0 of the canonical data.
-
-using Xunit;
-
 public class DartsTests
 {
     [Fact]
@@ -29,13 +25,13 @@ public class DartsTests
     }
 
     [Fact]
-    public void Exactly_on_centre()
+    public void Exactly_on_center()
     {
         Assert.Equal(10, Darts.Score(0, 0));
     }
 
     [Fact]
-    public void Near_the_centre()
+    public void Near_the_center()
     {
         Assert.Equal(10, Darts.Score(-0.1, -0.1));
     }
@@ -67,7 +63,7 @@ public class DartsTests
     [Fact]
     public void Just_within_the_outer_circle()
     {
-        Assert.Equal(1, Darts.Score(-7, 7));
+        Assert.Equal(1, Darts.Score(-7.0, 7.0));
     }
 
     [Fact]

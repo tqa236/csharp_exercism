@@ -4,5 +4,9 @@ for path in */; do
     dirname="$(basename "${path}")"
     cd "$dirname" || exit
     dotnet test
+    if [ $? -ne 0 ]; then
+        echo "Tests failed in $dirname"
+        exit 1
+    fi
     cd .. || exit
 done

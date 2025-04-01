@@ -1,6 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Text.RegularExpressions;
+using System.Collections.Generic;
 
 public static class Pangram
 {

@@ -8,7 +8,7 @@ public class SpaceAge
         this.seconds = seconds;
     }
 
-    public double OnEarth() => (double)seconds / 31557600;
+    public double OnEarth() => (double) seconds / 31557600;
     public double OnMercury() => OnEarth() / 0.2408467;
     public double OnVenus() => OnEarth() / 0.61519726;
     public double OnMars() => OnEarth() / 1.8808158;

@@ -1,28 +1,46 @@
 # Pangram
 
-Determine if a sentence is a pangram. A pangram (Greek: παν γράμμα, pan gramma,
-"every letter") is a sentence using every letter of the alphabet at least once.
+Welcome to Pangram on Exercism's C# Track.
+If you need help running the tests or submitting your code, check out `HELP.md`.
+
+## Introduction
+
+You work for a company that sells fonts through their website.
+They'd like to show a different sentence each time someone views a font on their website.
+To give a comprehensive sense of the font, the random sentences should use **all** the letters in the English alphabet.
+
+They're running a competition to get suggestions for sentences that they can use.
+You're in charge of checking the submissions to see if they are valid.
+
+~~~~exercism/note
+Pangram comes from Greek, παν γράμμα, pan gramma, which means "every letter".
+
 The best known English pangram is:
+
 > The quick brown fox jumps over the lazy dog.
+~~~~
 
-The alphabet used consists of ASCII letters `a` to `z`, inclusive, and is case
-insensitive. Input will not contain non-ASCII symbols.
+## Instructions
 
-## Running the tests
+Your task is to figure out if a sentence is a pangram.
 
-To run the tests, run the command `dotnet test` from within the exercise directory.
+A pangram is a sentence using every letter of the alphabet at least once.
+It is case insensitive, so it doesn't matter if a letter is lower-case (e.g. `k`) or upper-case (e.g. `K`).
 
-Initially, only the first test will be enabled. This is to encourage you to solve the exercise one step at a time.
-Once you get the first test passing, remove the `Skip` property from the next test and work on getting that test passing.
-Once none of the tests are skipped and they are all passing, you can submit your solution 
-using `exercism submit Pangram.cs`
-
-## Further information
-
-For more detailed information about the C# track, including how to get help if
-you're having trouble, please visit the exercism.io [C# language page](http://exercism.io/languages/csharp/resources).
+For this exercise, a sentence is a pangram if it contains each of the 26 letters in the English alphabet.
 
 ## Source
 
-Wikipedia [https://en.wikipedia.org/wiki/Pangram](https://en.wikipedia.org/wiki/Pangram)
+### Created by
 
+- @robkeim
+
+### Contributed to by
+
+- @ErikSchierboom
+- @j2jensen
+- @wolf99
+
+### Based on
+
+Wikipedia - https://en.wikipedia.org/wiki/Pangram

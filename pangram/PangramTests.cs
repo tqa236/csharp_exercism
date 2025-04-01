@@ -1,7 +1,3 @@
-// This file was auto-generated based on version 2.0.0 of the canonical data.
-
-using Xunit;
-
 public class PangramTests
 {
     [Fact]
@@ -59,8 +55,8 @@ public class PangramTests
     }
 
     [Fact]
-    public void Case_insensitive()
+    public void A_m_and_a_m_are_26_different_characters_but_not_a_pangram()
     {
-        Assert.False(Pangram.IsPangram("the quick brown fox jumps over with lazy FX"));
+        Assert.False(Pangram.IsPangram("abcdefghijklm ABCDEFGHIJKLM"));
     }
 }

@@ -1,26 +1,36 @@
 # Reverse String
 
-Reverse a string
+Welcome to Reverse String on Exercism's C# Track.
+If you need help running the tests or submitting your code, check out `HELP.md`.
 
-For example:
-input: "cool"
-output: "looc"
+## Introduction
 
-## Running the tests
+Reversing strings (reading them from right to left, rather than from left to right) is a surprisingly common task in programming.
 
-To run the tests, run the command `dotnet test` from within the exercise directory.
+For example, in bioinformatics, reversing the sequence of DNA or RNA strings is often important for various analyses, such as finding complementary strands or identifying palindromic sequences that have biological significance.
 
-Initially, only the first test will be enabled. This is to encourage you to solve the exercise one step at a time.
-Once you get the first test passing, remove the `Skip` property from the next test and work on getting that test passing.
-Once none of the tests are skipped and they are all passing, you can submit your solution 
-using `exercism submit ReverseString.cs`
+## Instructions
 
-## Further information
+Your task is to reverse a given string.
 
-For more detailed information about the C# track, including how to get help if
-you're having trouble, please visit the exercism.io [C# language page](http://exercism.io/languages/csharp/resources).
+Some examples:
+
+- Turn `"stressed"` into `"desserts"`.
+- Turn `"strops"` into `"sports"`.
+- Turn `"racecar"` into `"racecar"`.
 
 ## Source
 
-Introductory challenge to reverse an input string [https://medium.freecodecamp.org/how-to-reverse-a-string-in-javascript-in-3-different-ways-75e4763c68cb](https://medium.freecodecamp.org/how-to-reverse-a-string-in-javascript-in-3-different-ways-75e4763c68cb)
+### Created by
 
+- @robkeim
+
+### Contributed to by
+
+- @ErikSchierboom
+- @j2jensen
+- @wolf99
+
+### Based on
+
+Introductory challenge to reverse an input string - https://medium.freecodecamp.org/how-to-reverse-a-string-in-javascript-in-3-different-ways-75e4763c68cb
